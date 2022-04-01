@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SharedItems {
-    class Witch :Person {
+   public class Witch :Person {
 
         private Broom _Broom;
 

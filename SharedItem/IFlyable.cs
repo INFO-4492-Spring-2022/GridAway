@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SharedItems {
-    interface IFlyable {
+    interface IFlyable<T> {
         string Fly();
         string Land();
 
-        void AddPassengers(int count);
+        void AddPassengers(T pass);
     }
 }

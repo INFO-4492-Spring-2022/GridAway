@@ -33,8 +33,24 @@ namespace GridAway {
 
             //hallOfJustice.Add();
 
-            List<string> lst;
+            //List<string> lst;
 
+
+            SpaceShip<Citizen,Superhero,string> ship = new SpaceShip<Citizen,Superhero, string>();
+            Citizen cit = new Citizen("", "");
+            ship.Pilot = cit;
+            ship.Passengers.Add(sup);
+            ship.Title = "Boo";
+
+            SpaceShip<Citizen,Citizen, bool> normShip = new SpaceShip<Citizen,Citizen, bool>();
+            normShip.Pilot = cit;
+            normShip.Passengers.Add(cit);
+            normShip.Title = true;
+
+            SpaceShip<Witch,Broom, int> broomShip = new SpaceShip<Witch, Broom, int>();
+            broomShip.Pilot = new Witch("hilda","Broomwich");
+            broomShip.Passengers.Add(new Broom(broomShip.Pilot,"Brown"));
+            broomShip.Title = 23;
 
 
         }

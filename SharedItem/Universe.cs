@@ -6,6 +6,15 @@ using System.Threading.Tasks;
 
 namespace SharedItems {
     public static class Universe {
-        public static Lair placeOfParty = new Lair();
+        public static Lair<Person> placeOfParty = new Lair<Person>();
+        //public static SpaceShip spacer = new SpaceShip();
+
+        //private static void SetUpShip() {
+        //    Citizen c = new Citizen("","");
+
+        //    c.SetAsPilot(spacer);
+
+        //}
+
     }
 }

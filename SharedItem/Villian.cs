@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SharedItems {
-    public class Villian : Person, IFlyable {
+    public class Villian : Person, IFlyable<bool> {
         private string _Minion;
 
         public Villian(string firName, string lasName)
@@ -34,7 +34,7 @@ namespace SharedItems {
             return "Look out below";
         }
 
-        public void AddPassengers(int lvl) {
+        public void AddPassengers(bool lvl) {
 
         }
 

@@ -18,5 +18,9 @@ namespace SharedItems {
             get { return _Job; }
             set { _Job = value; }
         }
+
+        //internal void SetAsPilot(SpaceShip ss) {
+        //    ss.Pilot = this;
+        //}
     }
 }

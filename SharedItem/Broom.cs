@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SharedItems {
-    class Broom : IFlyable {
+    public class Broom : IFlyable<Witch> {
 
         private Witch _Owner;
         private String _Color;
@@ -31,7 +31,7 @@ namespace SharedItems {
             return "Screeeeech";
         }
 
-        public void AddPassengers(int witches) {
+        public void AddPassengers(Witch newHag) {
 
         }
 

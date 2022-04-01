@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SharedItems {
-    public class Superhero : Person, IFlyable {
+    public class Superhero : Person, IFlyable<string> {
 
         private Citizen _Identity;
         private string _Color;
@@ -34,8 +34,7 @@ namespace SharedItems {
 
         //}
 
-
-        public Citizen Identity {
+         public Citizen Identity {
             get { return _Identity; }
             set { _Identity = value; }
         }
@@ -62,7 +61,7 @@ namespace SharedItems {
             return "I hits the ground";
         }
 
-        public void AddPassengers (int number) {
+        public void AddPassengers (string value) {
 
         }
 
